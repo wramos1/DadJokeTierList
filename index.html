@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Joke Tier List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id='title'>
+        <h1 class='titles'>
+            <span>D</span>
+            <span>a</span>
+            <span>d</span>
+        </h1>
+        <h1 class='titles'>
+            <span>J</span>
+            <span>o</span>
+            <span>k</span>
+            <span>e</span>
+        </h1>
+        <h1 class='titles'>
+            <span>T</span>
+            <span>i</span>
+            <span>e</span>
+            <span>r</span>
+        </h1>
+        <h1 class='titles'>
+            <span>L</span>
+            <span>i</span>
+            <span>s</span>
+            <span>t</span>
+        </h1>
+    </div>
+
+    <div id='tierContainer'>
+
+        <div class='tier'>
+            <h2>Not Funny</h2>
+
+            <ul class='jokes not-funny'></ul>
+
+        </div>
+
+        <div class='tier'>
+            <h2>Eh</h2>
+
+            <ul class='jokes eh'></ul>
+
+        </div>
+
+        <div class='tier'>
+            <h2>Knee Slapper</h2>
+
+            <ul class='jokes funny'></ul>
+
+        </div>
+
+    </div>
+
+    <button id='clearLists'>Clear Lists</button>
+
+    <div id='generateJoke'>
+        <button id='generator' class='pulse'>Generate Joke</button>
+
+        <div id='jokePopUp'>
+            <ul id='jokeAwaitingAssignment'>
+
+            </ul>
+
+            <div id='jokeAssignment'>
+                <button id='notFunny'>Not Funny</button>
+                <button id='eh'>Eh</button>
+                <button id='funny'>Knee Slapper</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id='createJokeSection'>
+
+        <h1>Create Your Own Joke</h1>
+
+        <form id='jokeForm'>
+
+            <div>
+
+                <input id='createdJoke' type='text' placeholder='Best Joke Incoming?' required autocomplete='off'>
+                <button id='submitFormBtn'>Create</button>
+
+            </div>
+
+            <div>
+                <label for='jokeFunnyLevels'>Select Tier</label>
+                <select name='jokeFunnyLevels' id='tierSelect' required>
+                    <option value=''>Select Funny Level</option>
+                    <option value='notFunny'>Not Funny</option>
+                    <option value='eh'>Eh</option>
+                    <option value='funny'>Funny</option>
+                </select>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+<script src='app.js'></script>
+
+</html>
