@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     background-color: rgb(209, 141, 69);
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Henny Penny', cursive;
     color: rgb(234, 234, 68);
 }
 
@@ -13,7 +13,7 @@ button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Henny Penny', cursive;
 }
 
 #title {
@@ -103,13 +103,12 @@ span {
 }
 
 #generateJoke button {
-    padding: 1vh 2vw;
     background-color: navajowhite;
 }
 
 #generator {
-    padding: 1vh 2vw;
-    font-size: 1.15em;
+    padding: 0.5vh 1.2vw;
+    font-size: 1.5vmax;
     margin: 5% 0;
 }
 
@@ -192,7 +191,7 @@ span {
 #jokeForm input {
     width: 20vw;
     font-size: 1.22em;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Henny Penny', cursive;
     color: black;
     border-radius: 5px;
     outline: none;
@@ -205,7 +204,7 @@ span {
 }
 
 #tierSelect {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Henny Penny', cursive;
     background-color: rgb(80, 52, 183);
 }
 
@@ -245,17 +244,8 @@ span {
 }
 
 @keyframes pulse {
-    0% {
-        padding: 1vh 2vw;
-    }
-
     50% {
-        padding: 1vh 2.3vw;
-        font-size: 1.08em;
-    }
-
-    100% {
-        padding: 1vh 2vw;
+        transform: scale(1.15);
     }
 }
 
@@ -306,6 +296,7 @@ span {
     }
 }
 
+
 @media (max-width: 650px) {
     #jokePopUp {
         width: 45vh;
@@ -316,11 +307,11 @@ span {
     }
 
     #title {
-        font-size: 3.5vw;
+        font-size: 3.8vw;
     }
 
     #jokeAssignment button {
-        font-size: 0.9em;
+        font-size: 0.8em;
         width: 39%;
     }
 
@@ -341,6 +332,14 @@ span {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    #clearLists {
+        font-size: 1.75vmax;
+    }
+
+    #generator {
+        font-size: 1.85vmax;
     }
 }
 
