@@ -258,3 +258,56 @@ span {
         padding: 1vh 2vw;
     }
 }
+
+@media (max-width: 1100px) {
+    #jokeAssignment button {
+        font-size: 1.4vmax;
+    }
+}
+
+@media (max-width: 900px) {
+    #jokeAssignment button {
+        font-size: 1.2vmax;
+        width: 50px;
+    }
+
+    .jokes {
+        font-size: 1.9vmax;
+    }
+
+    .jokes li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 750px) {
+    #jokePopUp {
+        height: 45vh;
+        width: 40vw;
+    }
+
+    #jokePopUp::after {
+        border-bottom: 6.5vh solid rgb(80, 52, 183);
+        border-right: 6.5vh solid transparent;
+        border-top: 0px solid transparent;
+        border-left: 6.5vh solid transparent;
+    }
+
+    #jokePopUp ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    #jokeAssignment button {
+        font-size: 1.6vmin;
+    }
+}
+
+@media (max-width: 600px) {
+    .tier h2 {
+        font-size: 3.1vmax;
+    }
+}
