@@ -267,8 +267,7 @@ span {
 
 @media (max-width: 900px) {
     #jokeAssignment button {
-        font-size: 1.2vmax;
-        width: 50px;
+        font-size: 1.35vmax;
     }
 
     .jokes {
@@ -303,11 +302,54 @@ span {
 
     #jokeAssignment button {
         font-size: 1.6vmin;
+        width: 35%;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+    #jokePopUp {
+        width: 45vh;
+    }
+
     .tier h2 {
-        font-size: 3.1vmax;
+        font-size: 3vmax;
+    }
+
+    #title {
+        font-size: 3.5vw;
+    }
+
+    #jokeAssignment button {
+        font-size: 0.9em;
+        width: 39%;
+    }
+
+    #createJokeSection h1 {
+        font-size: 3.15vmax;
+    }
+
+    #jokeForm input {
+        padding: 0 1.5vmax;
+        font-size: 2.2vmax;
+    }
+
+    #submitFormBtn {
+        font-size: 0.75em;
+    }
+
+    #jokeForm div:last-child {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px) {
+    .tier h2 {
+        font-size: 4.2vw;
+    }
+
+    .jokes {
+        font-size: 2.8vw;
     }
 }
