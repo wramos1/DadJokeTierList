@@ -110,19 +110,24 @@ const handleSubmit = (e) => {
 
     if (jokeLevel.value === 'notFunny') {
         notFunnyList.append(newLi);
+        createdJoke.value = '';
+        jokeLevel.value = '';
+        window.scrollTo(0, 0);
     }
     else if (jokeLevel.value === 'eh') {
         ehList.append(newLi);
+        createdJoke.value = '';
+        jokeLevel.value = '';
+        window.scrollTo(0, 0);
     }
     else if (jokeLevel.value === 'funny') {
         funnyList.append(newLi);
+        createdJoke.value = '';
+        jokeLevel.value = '';
+        window.scrollTo(0, 0);
     } else {
         alert("Please Select A Funny Level!");
     }
-
-    createdJoke.value = '';
-    jokeLevel.value = '';
-    window.scrollTo(0, 0);
 };
 
 
